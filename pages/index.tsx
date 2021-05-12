@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import Link from "next/link";
+import Link from 'next/link'
 import styles from '../styles/Home.module.css'
 import Layout from '../components/layout'
 
@@ -12,10 +12,12 @@ export default function Home() {
       </Head>
       <Layout>
         <section className={styles.body}>
-          <h1 className={styles.title}>
-            Hey there
-          </h1>
-          <p className={styles.bodyP}>My name is Austin Kibler. I am a recent Computer Science graduate from McNeese State University. I picked up programming in 2013 by taking a few Python courses on Codecademy. Since then I have worked with many different languages like Java, Scheme, Swift, and JavaScript. </p>
+          <h1 className={styles.title}>Site Under Construction</h1>
+          <p className={styles.bodyP}>
+            This site is still under construction but feel free to check out my
+            <a href="https://github.com/Akibby">Github</a> to see some of my
+            work.
+          </p>
         </section>
       </Layout>
     </div>

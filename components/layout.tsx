@@ -7,14 +7,14 @@ const name = 'Austin Kibler'
 const links = [
   { href: '/', text: 'Home' },
   { href: '/about-me', text: 'About Me' },
-  { href: '#', text: 'Resume' },
+  { href: 'https://github.com/Akibby', text: 'Resume' },
 ]
 
 export const siteTitle = 'Next.js Sample Website'
 
 export default function Layout({ children }) {
   return (
-    <div>
+    <div className={styles.content}>
       <header className={styles.header}>
         <nav>
           {links.map(item => {
@@ -25,7 +25,9 @@ export default function Layout({ children }) {
             )
           })}
         </nav>
-        <span className={styles.logo}>Austin Kibler.dev</span>
+        <span className={styles.logo}>
+          <Link href={'/'}>Austin Kibler.dev</Link>
+        </span>
       </header>
       <main className={styles.main}>{children}</main>
     </div>
